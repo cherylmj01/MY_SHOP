@@ -9,7 +9,7 @@ export default function Directory({ categories }) {
     
   return (
     <Container sx={{minHeight:'100vh', display:'flex', flexDirection:'column', padding: 3}} >
-      <Box sx={{ bgcolor: '#cfe8fc', flexGrow: 1, padding:2 }}>
+      <Box sx={{ flexGrow: 1, padding:2 }}>
         <Grid container spacing={3} justifyContent="center">
         {categories.map(category => (
           <CategoryItem key={category.id} category={category} />
