@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-// import useStyles from './useStyles';  // Adjust the path according to your file structure
 import { Paper, Box, TextField, Button, Typography } from '@mui/material';
-
-
 import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../util/firebase/firebase.utils';
 
 const defaultFormFields = {
@@ -59,6 +56,7 @@ export default function SignUpForm() {
           <TextField
             label="Display Name"
             variant='outlined'
+            type="text"
             fullWidth
             required            
             onChange={handleChange}
@@ -72,6 +70,7 @@ export default function SignUpForm() {
           <TextField
             label="Email"
             variant='outlined'
+            type="email"
             fullWidth
             required            
             onChange={handleChange}
@@ -85,6 +84,7 @@ export default function SignUpForm() {
           <TextField
             label="Password"
             variant='outlined'
+            type="password"
             fullWidth
             required            
             onChange={handleChange}
@@ -98,6 +98,7 @@ export default function SignUpForm() {
           <TextField
             label="Confirm Password"
             variant='outlined'
+            type="password"
             fullWidth
             required            
             onChange={handleChange}
